@@ -31,6 +31,11 @@ body {
     overflow-x: hidden;
 }
 
+/* Truque para facilitar o cálculo de REM: 1rem = 10px */
+html {
+    font-size: 62.5%; 
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -73,30 +78,30 @@ body {
 .hero-text {
     font-family: var(--font-display);
     font-weight: 400;
-    font-size: 56px;
+    font-size: 5.6rem;
     line-height: 100%;
-    margin-bottom: 40px;
-    max-width: 500px;
+    margin-bottom: 4rem;
+    max-width: 50rem;
 }
 
 .hero-subtext {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.6;
-    margin-bottom: 32px;
-    max-width: 800px;
+    margin-bottom: 3.2rem;
+    max-width: 80rem;
 }
 
 .buttons-container {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 2.4rem;
     flex-wrap: wrap;
 }
 
 .btn {
-    padding: 16px 32px;
-    border-radius: 28px;
-    font-size: 20px;
+    padding: 1.6rem 3.2rem;
+    border-radius: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -119,8 +124,8 @@ body {
 
 
 .btn:hover {
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    transform: translateY(-2px);
+    box-shadow: 0 0.8rem 1.5rem rgba(0,0,0,0.2);
+    transform: translateY(-0.2rem);
 }
 
 /* =========================
@@ -138,14 +143,14 @@ body {
 
 
 .feature-section {
-    padding: 120px 0;
+    padding: 12rem 0;
 }
 
 .feature-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
+    gap: 10rem;
 }
 
 .feature-image {
@@ -159,13 +164,13 @@ body {
 .feature-text-content h2 {
     font-family: var(--font-primary);
     font-weight: 800; /* Um peso de fonte mais forte para o título */
-    font-size: 48px;
+    font-size: 4.8rem;
     line-height: 1.2;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 }
 
 .feature-text-content p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.6;
 }
 
@@ -175,36 +180,36 @@ body {
 
 .final-section {
     background-color: var(--color-off-white);
-    padding: 120px 0;
+    padding: 12rem 0;
     text-align: center;
 }
 
 .final-text-content {
-    max-width: 980px;
-    margin: 0 auto 40px;
+    max-width: 98rem;
+    margin: 0 auto 4rem;
 }
 
 .final-text-content h2 {
     font-family: var(--font-primary);
     font-weight: 800;
-    font-size: 40px;
-    margin-bottom: 24px;
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
 }
 
 .final-text-content p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.6;
 }
 
 .final-image {
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .final-section h3 {
     font-family: var(--font-display);
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
 }
 
 /* =========================
@@ -213,7 +218,7 @@ body {
 
 footer {
     background-color: var(--color-dark);
-    padding: 60px 0;
+    padding: 6rem 0;
 }
 
 footer .container {
@@ -223,7 +228,7 @@ footer .container {
 }
 
 .footer-logo {
-    width: 124px;
+    width: 12.4rem;
 }
 .footer-logo img {
     width: 100%;
@@ -240,7 +245,7 @@ footer .container {
     .feature-content {
         flex-direction: column;
         text-align: center;
-        gap: 50px;
+        gap: 5rem;
     }
 
     /* Inverte a ordem da imagem para manter a alternância no layout de coluna */
@@ -249,35 +254,35 @@ footer .container {
     }
 
     .feature-text-content h2 {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     .feature-text-content p {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
 @media (max-width: 768px) {
     /* Ajustes finos para telas de celular */
     .hero-text {
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 
     .hero-subtext {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .btn {
-        font-size: 16px;
-        padding: 12px 24px;
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
     }
 
     .feature-section,
     .final-section {
-        padding: 60px 0;
+        padding: 6rem 0;
     }
 
     .final-text-content h2 {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 }

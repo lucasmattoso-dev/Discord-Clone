@@ -48,7 +48,7 @@ Este é um projeto estático, então você pode executá-lo localmente com apena
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd seu-repositorio
+    cd Discord-Clone
     ```
 3.  Abra o arquivo `index.html` no seu navegador de preferência.
 

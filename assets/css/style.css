@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* =================
+   1. VARIÁVEIS (TOKENS DE DESIGN)
+   ================= */
+:root {
+    --font-primary: 'Open Sans', sans-serif;
+    --font-display: 'Luckiest Guy', cursive;
+
+    --color-brand: #5865F2;
+    --color-hero-bg: #404EED;
+    --color-dark: #23272A;
+    --color-light: #FFFFFF;
+    --color-off-white: #f6f6f6;
+}
+
+/* =================
+   2. ESTILOS GLOBAIS
+   ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =================
+   3. SEÇÃO HERO
+   ================= */
+.hero-wrapper {
+    position: relative; /* Necessário para posicionar a imagem de fundo filha */
+    color: var(--color-light);
+    display: flex;
+    justify-content: center; /* Centro horizontal */
+    align-items: center; /* Centro vertical */
+    text-align: center;
+    min-height: 100vh; /* Garante que o wrapper ocupe a altura total da tela */
+}
+
+.hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre o espaço mantendo a proporção, sem distorcer */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+
+/* --- Conteúdo Hero --- */
+.hero-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 100%;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.hero-subtext {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 800px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-light {
+    background-color: #FFFFFF;
+    color: #23272A;
+}
+
+.btn-dark {
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    background-color: #5865F2; /* Cor azul/roxa do Discord */
+    color: #FFFFFF;
+}
+
+
+.btn:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SEÇÕES DE FUNCIONALIDADES
+   ========================= */
+
+/* Seção com fundo cinza e layout invertido */
+.feature-section:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
+
+.feature-section:nth-of-type(even) .feature-content {
+    flex-direction: row-reverse;
+}
+
+
+.feature-section {
+    padding: 120px 0;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.feature-image {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+}
+
+.feature-image img {
+    max-width: 100%;
+}
+
+.feature-text-content h2 {
+    font-family: var(--font-primary);
+    font-weight: 800; /* Um peso de fonte mais forte para o título */
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.feature-text-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* =========================
+   5. SEÇÃO FINAL
+   ========================= */
+
+.final-section {
+    background-color: var(--color-off-white);
+    padding: 120px 0;
+    text-align: center;
+}
+
+.final-text-content {
+    max-width: 980px;
+    margin: 0 auto 40px;
+}
+
+.final-text-content h2 {
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+.final-text-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.final-image {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.final-section h3 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   6. FOOTER
+   ========================= */
+
+footer {
+    background-color: var(--color-dark);
+    padding: 60px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 124px;
+}
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+/* =========================
+   7. RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 992px) {
+    /* Ajusta o layout das seções de funcionalidades para telas menores (tablets) */
+    .feature-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    /* Inverte a ordem da imagem para manter a alternância no layout de coluna */
+    .feature-section:nth-of-type(even) .feature-content {
+        flex-direction: column-reverse;
+    }
+
+    .feature-text-content h2 {
+        font-size: 32px;
+    }
+
+    .feature-text-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes finos para telas de celular */
+    .hero-text {
+        font-size: 36px;
+    }
+
+    .hero-subtext {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .feature-section,
+    .final-section {
+        padding: 60px 0;
+    }
+
+    .final-text-content h2 {
+        font-size: 28px;
+    }
+}

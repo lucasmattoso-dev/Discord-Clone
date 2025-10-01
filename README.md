@@ -16,8 +16,8 @@
   <a href="#-autor">Autor</a>
 </p>
 
-
-
+<br>
+<br>
 
 > **Nota:** Você pode ver uma demonstração ao vivo do projeto [aqui](https://lucasmattoso-dev.github.io/Discord-Clone/).
 

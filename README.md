@@ -16,8 +16,7 @@
   <a href="#-autor">Autor</a>
 </p>
 
-<br>
-<br>
+
 
 > **Nota:** Você pode ver uma demonstração ao vivo do projeto [aqui](https://lucasmattoso-dev.github.io/Discord-Clone/).
 
@@ -25,8 +24,8 @@
 
 -   **Layout Responsivo**: Design que se adapta perfeitamente a qualquer tamanho de tela, utilizando Media Queries para pontos de quebra específicos.
 -   **CSS Moderno**:
--   **Flexbox**: Utilizado para criar layouts complexos e alinhamentos precisos de forma eficiente.
--   **Variáveis CSS (Custom Properties)**: Centralização de tokens de design (cores, fontes) para um tema coeso e de fácil manutenção.
+    -   **Flexbox**: Utilizado para criar layouts complexos e alinhamentos precisos de forma eficiente.
+    -   **Variáveis CSS (Custom Properties)**: Centralização de tokens de design (cores, fontes) para um tema coeso e de fácil manutenção.
 -   **Estrutura Semântica**: HTML5 organizado com tags como `<main>`, `<section>` e `<footer>` para otimizar a acessibilidade e o SEO.
 -   **Design Fiel**: Recriação cuidadosa dos elementos visuais, tipografia e paleta de cores da página original do Discord.
 -   **Micro-interações**: Efeitos sutis de `hover` nos botões para melhorar a experiência do usuário.
@@ -44,7 +43,7 @@ Este é um projeto estático, então você pode executá-lo localmente com apena
 
 1.  Clone o repositório para a sua máquina local:
     ```bash
-    https://github.com/lucasmattoso-dev/Discord-Clone.git
+    git clone https://github.com/lucasmattoso-dev/Discord-Clone.git
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
@@ -56,7 +55,9 @@ E está pronto! A página será renderizada.
 
 ## ✒️ Autor
 
-Desenvolvido por **[Lucas Mattoso]**.
+Desenvolvido por **Lucas Mattoso**.
 
+[!LinkedIn](https://www.linkedin.com/in/lucas-nascimento-dos-santos-mattoso-92ab92228/)
+[!GitHub](https://github.com/lucasmattoso-dev/)
 
 ---
